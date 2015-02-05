@@ -1,0 +1,83 @@
+﻿$black: #000;
+$white: #fff;
+
+.green {
+	background-color: #4CBB17;
+}
+
+.yellow {
+	color: $black;
+	background-color: #FFFFAA;
+}
+
+.orange {
+	background-color: #FF6600;
+}
+
+.red {
+	background-color: #FF0000;
+}
+
+.hidden {
+	display: none;
+}
+
+.foodList {
+	.x-list-item {
+		border: none!important;
+		height: 3em;
+		line-height: 3em;
+		vertical-align: middle;
+
+		.list-item-checkbox {
+			position: absolute;
+			top: 1.15em;
+			left: 1.15em;
+		}
+
+		.list-item-name {
+			position: absolute;
+			top: 0;
+			left: 2.8em;
+		}
+
+		.list-item-expiry {
+			position: absolute;
+			right: 0;
+			height: 100%;
+			top: 0;
+			width: 3.5em;
+			border: 1px solid $black;
+			border-top: 0;
+			overflow: hidden;
+			text-align: center;
+			line-height:1.1em;
+			padding-top: 0.35em;
+			color: $black;
+		}
+
+		.x-list-disclosure { /* position: absolute is inherited */
+			bottom: 0.65em;
+			left: 0.5em;
+			top: initial;
+		}
+
+		.x-list-disclosure:before {
+			content: '#'; // This comes from a special font installed in Sencha. This is a bin icon.
+		}
+	}
+}
+
+.x-item-selected {
+	.list-item-title {
+		color: $white;
+	}
+
+	.list-item-narrative {
+		color: $white;
+	}
+}
+
+.list-empty-text {
+	padding:10px;
+}
